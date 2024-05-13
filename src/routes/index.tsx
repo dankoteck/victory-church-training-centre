@@ -9,7 +9,7 @@ function IndexPage() {
   return (
     <>
       <UIHeader />
-      <main className="container-"></main>
+      <main className="container"></main>
       <UIFooter />
     </>
   );
