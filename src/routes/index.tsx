@@ -1,4 +1,4 @@
-import { UIHeader } from "@/components";
+import { UIFooter, UIHeader } from "@/components";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -10,6 +10,7 @@ function IndexPage() {
     <>
       <UIHeader />
       <main className="container-"></main>
+      <UIFooter />
     </>
   );
 }
