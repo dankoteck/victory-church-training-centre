@@ -1,3 +1,4 @@
+import TailwindCSSForm from "@tailwindcss/forms";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
@@ -19,6 +20,9 @@ export default {
         sans: ['"Mouse Memoirs"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        red: {
+          600: "#E02424",
+        },
         primary: {
           50: "#EBF5FF",
           200: "#C3DDFD",
@@ -36,5 +40,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [TailwindCSSForm],
 };
