@@ -2,6 +2,7 @@ import { LogoSvg, UIButton } from "@/components";
 import { Link } from "@tanstack/react-router";
 
 import navData from "@/static/nav.json";
+import { SignInButton } from "@clerk/clerk-react";
 
 export default function UIHeader() {
   return (
@@ -28,9 +29,9 @@ export default function UIHeader() {
         </nav>
 
         <nav className="hidden items-center gap-4 lg:flex">
-          <Link href="/login">
-            <span className="text-lg">Log In</span>
-          </Link>
+          <SignInButton>
+            <span className="cursor-pointer text-lg">Log In</span>
+          </SignInButton>
           <UIButton className="w-[144px] text-lg">Get Started</UIButton>
         </nav>
       </div>
