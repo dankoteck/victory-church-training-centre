@@ -10,14 +10,16 @@ export default function Hero({ bgUrl, primary, secondary }: Props) {
   return (
     <section
       style={{ "--image-url": `url(${bgUrl})` } as CSSProperties}
-      className="py-16 bg-[image:var(--image-url)] bg-bottom bg-cover bg-no-repeat bg-fixed"
+      className="bg-[image:var(--image-url)] bg-cover bg-fixed bg-bottom bg-no-repeat"
     >
-      <h1 className="text-[66px] leading-[60px] tracking-[0.64px] text-center text-gray-900">
-        {primary}
-      </h1>
-      <h2 className="text-3xl mt-2 leading-[2] tracking-[0.64px] text-center text-gray-900">
-        {secondary}
-      </h2>
+      <div className="mx-auto max-w-screen-xl py-6 md:py-7 lg:py-8 xl:py-12 bs:py-16">
+        <h1 className="text-center text-2xl !leading-[1] tracking-[0.64px] text-gray-900 lg:text-4xl xl:text-6xl bs:text-[66px]">
+          {primary}
+        </h1>
+        <h2 className="text-center text-lg leading-[2] tracking-[0.64px] text-gray-900 lg:mt-2 lg:text-xl xl:text-2xl bs:text-3xl">
+          {secondary}
+        </h2>
+      </div>
     </section>
   );
 }

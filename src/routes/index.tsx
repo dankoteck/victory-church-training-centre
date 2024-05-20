@@ -20,7 +20,7 @@ function IndexPage() {
 
       <UIHero
         primary="Victory Church Training Centre"
-        secondary="By Pastor Gian C Villatoro "
+        secondary="By Pastor Gian C Villatoro"
         bgUrl={HomeHero}
       />
 

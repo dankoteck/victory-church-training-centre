@@ -43,26 +43,26 @@ const mentors = [
 
 export default function OurMentors() {
   return (
-    <section className="bg-white py-24">
-      <div className="container flex gap-16">
-        <div className="space-y-4 min-w-[448px]">
-          <h3 className="text-gray-900 text-4xl tracking-[0.96px]">
+    <section className="bg-white py-10 md:py-14 lg:py-20 bs:py-24">
+      <div className="mx-auto flex max-w-screen-xl flex-col gap-8 px-4 lg:flex-row lg:gap-12 xl:gap-14 xl:px-8 bs:gap-16 bs:px-0">
+        <div className="w-auto space-y-4 text-center lg:flex-shrink-0 lg:text-left bs:min-w-[448px]">
+          <h3 className="text-4xl tracking-[0.96px] text-gray-900">
             Our Mentors
           </h3>
-          <p className="text-xl text-gray-500">
+          <p className="text-lg text-gray-500 xl:text-xl">
             Lorem ipsum dolor sit amet, consectetur adiscing elit, sed do
             <br />
             eiusmod tempor incidt ut labore et dolore magna aliqua. Ut enim
             <br />
             exerction ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-          <button className="py-3 px-5 rounded-full flex items-center justify-center gap-2 w-full border border-primary-700 text-primary-700 text-lg tracking-[0.64px]">
+          <button className="flex w-full items-center justify-center gap-2 rounded-full border border-primary-700 px-5 py-3 text-lg tracking-[0.64px] text-primary-700">
             Browse Students
             <img alt="Arrow icon" src={ArrowIcon} />
           </button>
         </div>
 
-        <ul className="grid grid-cols-12 grid-rows-2 gap-x-3 gap-y-3 w-full">
+        <ul className="grid w-full grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-4 md:grid-cols-12 bs:gap-x-3 bs:gap-y-3">
           {mentors.map((mentor) => (
             <li
               style={
@@ -71,17 +71,17 @@ export default function OurMentors() {
                 } as CSSProperties
               }
               className={cn(
-                "flex flex-col items-center justify-end relative overflow-hidden after:absolute after:inset-0 after:w-full after:h-full after:bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0)_3.65%,_rgba(0,_0,_0,_0.6)_83.85%),linear-gradient(0deg,_rgba(26,_86,_219,_0.15),_rgba(26,_86,_219,_0.15))] h-[320px] p-2.5 rounded-[48px] col-span-4 bg-center bg-cover bg-no-repeat bg-[image:var(--mentor-profile-img-url)]",
+                "relative flex h-60 flex-col items-center justify-end overflow-hidden rounded-[48px] bg-[image:var(--mentor-profile-img-url)] bg-cover bg-center bg-no-repeat p-2.5 after:absolute after:inset-0 after:h-full after:w-full after:bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0)_3.65%,_rgba(0,_0,_0,_0.6)_83.85%),linear-gradient(0deg,_rgba(26,_86,_219,_0.15),_rgba(26,_86,_219,_0.15))] md:col-span-4 xl:h-72 bs:h-80 bs:rounded-[48px]",
                 {
-                  "col-span-6": mentor.id === 4 || mentor.id === 5,
-                }
+                  "md:col-span-6": mentor.id === 4 || mentor.id === 5,
+                },
               )}
               key={mentor.id}
             >
-              <p className="text-white text-lg text-center font-['Arial'] font-bold z-[1]">
+              <p className="z-[1] text-center font-['Arial'] text-lg font-bold text-white">
                 {mentor.name}
               </p>
-              <p className="text-gray-300 text-base text-center font-['Arial'] font-normal z-[1]">
+              <p className="z-[1] text-center font-['Arial'] text-base font-normal text-gray-300">
                 {mentor.position}
               </p>
             </li>

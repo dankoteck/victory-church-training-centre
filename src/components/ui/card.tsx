@@ -31,22 +31,21 @@ export default function UICard({
   media,
 }: Props) {
   return (
-    <div className="py-8 px-5 space-y-4 border rounded-3xl bg-white border-gray-200 shadow-md">
+    <div className="space-y-2 rounded-3xl border border-gray-200 bg-white p-4 shadow-md md:space-y-3 md:p-6 xl:p-5 bs:space-y-4 bs:py-8">
       <img
         alt={description}
         src={media}
-        className="shadow-lg rounded-2xl w-full object-cover object-center max-h-[288px]"
+        className="max-h-[188px] w-full rounded-2xl object-cover object-center shadow-lg md:max-h-[238px] bs:max-h-[288px]"
       />
-      <p className="text-4xl tracking-[0.96px] text-center">{title}</p>
-      <p className="w-fit mx-auto py-0.5 px-2.5 rounded-full bg-gray-100 text-lg tracking-[0.64px] text-center">
+      <p className="text-center text-2xl tracking-[0.96px] bs:text-4xl">
+        {title}
+      </p>
+      <p className="mx-auto w-fit rounded-full bg-gray-100 px-2.5 py-0.5 text-center text-base tracking-[0.64px] bs:text-lg">
         {amount} {getStringByType(type)}
       </p>
-      <p className="text-gray-500 text-lg text-center tracking-[0.64px]">
+      <p className="text-center text-base tracking-[0.64px] text-gray-500 bs:text-lg">
         {description}
       </p>
-      <button className="w-full rounded-full border border-primary-700 py-3 px-5 text-lg text-primary-700 tracking-[0.64px]">
-        Login as {title}
-      </button>
     </div>
   );
 }

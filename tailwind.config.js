@@ -6,6 +6,13 @@ export default {
   theme: {
     container: {
       center: true,
+      padding: {
+        DEFAULT: "1rem",
+      },
+    },
+    screens: {
+      bs: "1440px",
+      ...defaultTheme.screens,
     },
     extend: {
       fontFamily: {

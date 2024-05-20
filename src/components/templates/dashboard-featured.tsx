@@ -12,48 +12,39 @@ const list = [
     media: CardMedia01,
     amount: 8,
     type: "programs" as const,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "8 programs offered",
   },
   {
     title: "Online Tests Admin",
     media: CardMedia02,
     amount: 10,
     type: "tests" as const,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "10 Online Tests",
   },
   {
     title: "Mentors Admin",
     media: CardMedia03,
     amount: 8,
     type: "mentors" as const,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "10 Mentors",
   },
   {
     title: "Students Admin",
     media: CardMedia04,
     amount: 50,
     type: "students" as const,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "50 Enrolled Students",
   },
 ];
 
 export default function DashboardFeatured() {
   return (
-    <section className="w-full max-w-[1000px] mx-auto py-24">
-      <h3 className="text-[40px] leading-[50px] tracking-[0.96px] text-center text-gray-900">
-        Victory Church Training Centre
+    <section className="mx-auto w-full max-w-[1000px] px-4 py-10 lg:px-0 lg:py-20 bs:py-24">
+      <h3 className="text-center text-xl leading-[50px] tracking-[0.96px] text-gray-900 lg:text-3xl bs:text-[40px]">
+        VC Training Center-Admin Main Menu
       </h3>
 
-      <h4 className="text-xl text-center text-gray-500 mt-4 max-w-screen-sm mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </h4>
-
-      <ul className="mt-8 grid grid-cols-2 grid-rows-2 gap-x-12 gap-y-12">
+      <ul className="mt-8 grid grid-cols-1 gap-x-5 gap-y-5 sm:grid-cols-2 lg:gap-x-8 lg:gap-y-8 bs:grid-cols-2 bs:grid-rows-2 bs:gap-x-12 bs:gap-y-12">
         {list.map((item) => (
           <li key={item.title}>
             <UICard {...item} />

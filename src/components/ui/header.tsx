@@ -6,12 +6,12 @@ import navData from "@/static/nav.json";
 export default function UIHeader() {
   return (
     <header className="bg-primary-50 py-6">
-      <div className="container flex items-center justify-between">
-        <nav className="flex items-center">
+      <div className="mx-auto flex max-w-[375px] items-center justify-center md:max-w-screen-sm md:justify-between lg:max-w-[900px] xl:max-w-screen-lg bs:max-w-screen-xl">
+        <nav className="flex items-center bs:mx-auto">
           <Link href="/">
             <img alt="LOGO" src={LogoSvg} />
           </Link>
-          <ul className="flex items-center gap-8 ml-[112px]">
+          <ul className="hidden items-center gap-8 lg:ml-12 lg:flex xl:ml-20 bs:ml-28">
             <li className="text-lg tracking-[1.6px]">
               <Link className="[&.active]:text-primary-600" to="/">
                 Home
@@ -27,7 +27,7 @@ export default function UIHeader() {
           </ul>
         </nav>
 
-        <nav className="flex items-center gap-4">
+        <nav className="hidden items-center gap-4 lg:flex">
           <Link href="/login">
             <span className="text-lg">Log In</span>
           </Link>
