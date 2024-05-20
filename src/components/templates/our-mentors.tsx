@@ -62,16 +62,16 @@ export default function OurMentors() {
           </button>
         </div>
 
-        <ul className="grid w-full grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-4 md:grid-cols-12 bs:gap-x-3 bs:gap-y-3">
+        <ul className="grid w-full grid-cols-2 gap-3 md:grid-cols-12 md:gap-4 md:gap-y-5 bs:gap-x-3 bs:gap-y-3">
           {mentors.map((mentor) => (
             <li
               style={
                 {
-                  "--mentor-profile-img-url": `url('/src/assets/img/profile/mentor-0${mentor.id}.jpeg')`,
+                  "--mentor-profile-img-url": `url('${mentor.avatar}')`,
                 } as CSSProperties
               }
               className={cn(
-                "relative flex h-60 flex-col items-center justify-end overflow-hidden rounded-[48px] bg-[image:var(--mentor-profile-img-url)] bg-cover bg-center bg-no-repeat p-2.5 after:absolute after:inset-0 after:h-full after:w-full after:bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0)_3.65%,_rgba(0,_0,_0,_0.6)_83.85%),linear-gradient(0deg,_rgba(26,_86,_219,_0.15),_rgba(26,_86,_219,_0.15))] md:col-span-4 xl:h-72 bs:h-80 bs:rounded-[48px]",
+                "relative flex h-40 flex-col items-center justify-end overflow-hidden rounded-[48px] bg-[image:var(--mentor-profile-img-url)] bg-cover bg-center bg-no-repeat p-2.5 after:absolute after:inset-0 after:h-full after:w-full after:bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0)_3.65%,_rgba(0,_0,_0,_0.6)_83.85%),linear-gradient(0deg,_rgba(26,_86,_219,_0.15),_rgba(26,_86,_219,_0.15))] md:col-span-4 md:h-60 xl:h-72 bs:h-80 bs:rounded-[48px]",
                 {
                   "md:col-span-6": mentor.id === 4 || mentor.id === 5,
                 },

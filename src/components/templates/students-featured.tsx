@@ -7,7 +7,7 @@ export default function StudentsFeatured() {
       <img
         alt="Student Featured Mockup"
         src={StudentMockup}
-        className="aspect-[457/435] max-h-[325px] rounded-full object-cover shadow-lg bs:max-h-[435px]"
+        className="aspect-[457/435] max-h-[275px] rounded-full object-cover shadow-lg md:max-h-[325px] bs:max-h-[435px]"
       />
 
       <div className="w-full space-y-6 text-center lg:text-left bs:max-w-screen-sm">
