@@ -9,7 +9,7 @@ export default function UIHeader() {
     <header className="bg-primary-50 py-6">
       <div className="mx-auto flex max-w-[375px] items-center justify-center md:max-w-screen-sm md:justify-between lg:max-w-[900px] xl:max-w-screen-lg bs:max-w-screen-xl">
         <nav className="flex items-center bs:mx-auto">
-          <Link href="/">
+          <Link to="/">
             <img alt="LOGO" src={LogoSvg} />
           </Link>
           <ul className="hidden items-center gap-8 lg:ml-12 lg:flex xl:ml-20 bs:ml-28">

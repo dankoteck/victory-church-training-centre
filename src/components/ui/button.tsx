@@ -1,28 +1,59 @@
 import { cn } from "@/utils/cn";
+import { cva, type VariantProps } from "class-variance-authority";
 import { ClassValue } from "clsx";
 import { ButtonHTMLAttributes, PropsWithChildren } from "react";
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> &
+  VariantProps<typeof buttonCva> &
   PropsWithChildren & {
     className?: ClassValue | ClassValue[];
     loading?: boolean;
   };
 
+const buttonCva = cva(
+  [
+    "text-base",
+    "capitalize",
+    "flex",
+    "items-center",
+    "justify-center",
+    "gap-2",
+    "rounded-full",
+    "text-white",
+    "tracking-[0.64px]",
+  ],
+  {
+    variants: {
+      variant: {
+        default: ["bg-primary-700"],
+        destructive: [
+          "border",
+          "border-red-700",
+          "bg-transparent",
+          "text-red-700",
+        ],
+      },
+      size: {
+        default: ["py-2.5", "px-5"],
+        small: ["py-2", "px-4"],
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  },
+);
+
 export default function UIButton({
   children,
   loading = false,
   className = "",
+  variant,
+  size,
 }: Props) {
   return (
-    <button
-      className={cn(
-        "btn-primary flex items-center justify-center gap-2",
-        className,
-        {
-          "disabled opacity-50": loading,
-        },
-      )}
-    >
+    <button className={cn(buttonCva({ variant, size, className }))}>
       {children}
       {loading && (
         <>

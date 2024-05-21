@@ -22,10 +22,12 @@ export default {
       colors: {
         red: {
           600: "#E02424",
+          700: "#C81E1E",
         },
         primary: {
           50: "#EBF5FF",
           200: "#C3DDFD",
+          500: "#3F83F8",
           600: "#1C64F2",
           700: "#1A56DB",
         },

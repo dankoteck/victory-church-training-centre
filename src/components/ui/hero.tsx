@@ -12,7 +12,7 @@ export default function Hero({ bgUrl, primary, secondary }: Props) {
       style={{ "--image-url": `url(${bgUrl})` } as CSSProperties}
       className="bg-[image:var(--image-url)] bg-cover bg-fixed bg-bottom bg-no-repeat"
     >
-      <div className="mx-auto max-w-screen-xl py-6 md:py-7 lg:py-8 xl:py-12 bs:py-16">
+      <div className="mx-auto flex min-h-[126px] max-w-screen-xl flex-col justify-center lg:min-h-[176px]">
         <h1 className="text-center text-2xl !leading-[1] tracking-[0.64px] text-gray-900 lg:text-4xl xl:text-6xl bs:text-[66px]">
           {primary}
         </h1>
