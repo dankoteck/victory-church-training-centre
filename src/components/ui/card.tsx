@@ -35,7 +35,7 @@ export default function UICard({
       <img
         alt={description}
         src={media}
-        className="max-h-[188px] w-full rounded-2xl object-cover object-center shadow-lg md:max-h-[238px] bs:max-h-[288px]"
+        className="h-[188px] w-full rounded-2xl object-cover object-center shadow-lg md:h-[238px] bs:h-[288px]"
       />
       <p className="text-center text-2xl tracking-[0.96px] bs:text-4xl">
         {title}
