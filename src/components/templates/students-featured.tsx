@@ -1,4 +1,4 @@
-import StudentMockup from "@/assets/img/students-mockup.jpeg";
+import StudentMockup from "@/assets/img/students-mockup.webp";
 import { ArrowWhiteIcon } from "@/components";
 
 export default function StudentsFeatured() {

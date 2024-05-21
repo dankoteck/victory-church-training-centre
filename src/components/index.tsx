@@ -13,7 +13,7 @@ export { default as ArrowWhiteIcon } from "@/assets/icons/arrow-white.svg";
 export { default as ArrowIcon } from "@/assets/icons/arrow.svg";
 export { default as LogoSvg } from "@/assets/img/logo.svg";
 
-export { default as HomeHero } from "@/assets/img/hero/home.jpeg";
-export { default as ProgramsHero } from "@/assets/img/hero/programs.jpeg";
+export { default as HomeHero } from "@/assets/img/hero/home.webp";
+export { default as ProgramsHero } from "@/assets/img/hero/programs.webp";
 
 export { default as CreateNewProgramForm } from "@/components/form/CreateNewProgram";

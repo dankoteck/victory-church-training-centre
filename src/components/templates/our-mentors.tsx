@@ -2,11 +2,11 @@ import { ArrowIcon } from "@/components";
 import { cn } from "@/utils/cn";
 import { CSSProperties } from "react";
 
-import Mentor01 from "@/assets/img/profile/mentor-01.jpeg";
-import Mentor02 from "@/assets/img/profile/mentor-02.jpeg";
-import Mentor03 from "@/assets/img/profile/mentor-03.jpeg";
-import Mentor04 from "@/assets/img/profile/mentor-04.jpeg";
-import Mentor05 from "@/assets/img/profile/mentor-05.jpeg";
+import Mentor01 from "@/assets/img/profile/mentor-01.webp";
+import Mentor02 from "@/assets/img/profile/mentor-02.webp";
+import Mentor03 from "@/assets/img/profile/mentor-03.webp";
+import Mentor04 from "@/assets/img/profile/mentor-04.webp";
+import Mentor05 from "@/assets/img/profile/mentor-05.webp";
 
 const mentors = [
   {

@@ -1,7 +1,7 @@
-import CardMedia01 from "@/assets/img/grid-item-01.jpeg";
-import CardMedia02 from "@/assets/img/grid-item-02.jpeg";
-import CardMedia03 from "@/assets/img/grid-item-03.jpeg";
-import CardMedia04 from "@/assets/img/grid-item-04.jpeg";
+import CardMedia01 from "@/assets/img/grid-item-01.webp";
+import CardMedia02 from "@/assets/img/grid-item-02.webp";
+import CardMedia03 from "@/assets/img/grid-item-03.webp";
+import CardMedia04 from "@/assets/img/grid-item-04.webp";
 
 import UICard from "../ui/card";
 
