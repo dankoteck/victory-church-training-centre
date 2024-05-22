@@ -116,7 +116,7 @@ const columns = [
   }),
 ];
 
-export default function ProgramsPage() {
+function ProgramsPage() {
   const table = useReactTable({
     data,
     columns,

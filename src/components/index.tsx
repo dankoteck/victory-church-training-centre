@@ -15,5 +15,6 @@ export { default as LogoSvg } from "@/assets/img/logo.svg";
 
 export { default as HomeHero } from "@/assets/img/hero/home.webp";
 export { default as ProgramsHero } from "@/assets/img/hero/programs.webp";
+export { default as OnlineTestsHero } from "@/assets/img/hero/online-test.webp";
 
 export { default as CreateNewProgramForm } from "@/components/form/CreateNewProgram";

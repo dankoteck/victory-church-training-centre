@@ -12,12 +12,18 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as ProgramsImport } from './routes/programs'
+import { Route as OnlineTestsImport } from './routes/online-tests'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
 const ProgramsRoute = ProgramsImport.update({
   path: '/programs',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const OnlineTestsRoute = OnlineTestsImport.update({
+  path: '/online-tests',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -37,6 +43,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/online-tests': {
+      id: '/online-tests'
+      path: '/online-tests'
+      fullPath: '/online-tests'
+      preLoaderRoute: typeof OnlineTestsImport
+      parentRoute: typeof rootRoute
+    }
     '/programs': {
       id: '/programs'
       path: '/programs'
@@ -49,6 +62,10 @@ declare module '@tanstack/react-router' {
 
 // Create and export the route tree
 
-export const routeTree = rootRoute.addChildren({ IndexRoute, ProgramsRoute })
+export const routeTree = rootRoute.addChildren({
+  IndexRoute,
+  OnlineTestsRoute,
+  ProgramsRoute,
+})
 
 /* prettier-ignore-end */
